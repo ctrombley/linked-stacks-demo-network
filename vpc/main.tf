@@ -12,15 +12,15 @@ terraform {
 
 resource "random_id" "vpc_id" {
   prefix = "vpc-"
-  length = 8
+  byte_length = 8
 }
 
 resource "random_id" "subnet_private_id" {
   prefix = "subnet-"
-  length = 8
+  byte_length = 8
 }
 
 resource "random_id" "subnet_public_id" {
   prefix = "subnet-"
-  length = 8
+  byte_length = 8
 }
