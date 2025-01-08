@@ -10,7 +10,17 @@ terraform {
   }
 }
 
-resource "random_pet" "this" {
+resource "random_id" "vpc_id" {
+  prefix = var.prefix
+  length = 3
+}
+
+resource "random_id" "subnet_private_id" {
+  prefix = var.prefix
+  length = 3
+}
+
+resource "random_id" "subnet_public_id" {
   prefix = var.prefix
   length = 3
 }
