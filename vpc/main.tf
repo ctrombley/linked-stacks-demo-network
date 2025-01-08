@@ -11,16 +11,16 @@ terraform {
 }
 
 resource "random_id" "vpc_id" {
-  prefix = var.prefix
-  length = 3
+  prefix = "vpc-"
+  length = 8
 }
 
 resource "random_id" "subnet_private_id" {
-  prefix = var.prefix
-  length = 3
+  prefix = "subnet-"
+  length = 8
 }
 
 resource "random_id" "subnet_public_id" {
-  prefix = var.prefix
-  length = 3
+  prefix = "subnet-"
+  length = 8
 }
