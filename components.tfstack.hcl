@@ -9,7 +9,7 @@ required_providers {
   }
 }
 
-provider "random" {}
+provider "random" "this" {}
 
 component "vpc" {
   source = "./vpc"
