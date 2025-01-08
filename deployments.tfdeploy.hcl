@@ -25,7 +25,7 @@ publish_output "staging_subnet_private_id" {
   value = deployment.staging.subnet_private_id
 }
 
-publish_output "staging_vpc_id" {
+publish_output "prod_vpc_id" {
   value = deployment.prod.vpc_id
 }
 
